@@ -1,0 +1,184 @@
+{
+  "alg": "Ed25519",
+  "keyId": "d6880dc0b37be84b",
+  "signature": "VCp/OCK9+yEnM7Q6zYWwKe9BlSK/DAvlUCjuS/ZirelQPBBcX0rqDe36mR4GcJ4WScJVKJl2rWeSoM7F90mXCQ==",
+  "payload": {
+    "schemaVersion": 1,
+    "manifestId": "017b5beaefd321c4",
+    "issuedAt": "2026-10-09T17:16:29.373Z",
+    "expiresAt": "2026-10-12T17:16:29.373Z",
+    "event": {
+      "slug": "flutter-event",
+      "name": "Flutter Build Day"
+    },
+    "target": {
+      "os": "windows",
+      "arch": "arm64"
+    },
+    "mirrorBaseUrl": null,
+    "minAppVersion": "0.1.0",
+    "placeholder": false,
+    "components": [
+      {
+        "id": "system",
+        "name": "System check",
+        "enabled": true,
+        "required": true,
+        "minDiskGb": 15
+      },
+      {
+        "id": "git",
+        "name": "Git",
+        "enabled": true,
+        "required": true,
+        "minVersion": "2.30.0",
+        "version": "2.56.0",
+        "artifact": {
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.1/Git-2.56.0-arm64.exe",
+          "mirrorPath": "git/2.56.0/Git-2.56.0-arm64.exe",
+          "sha256": "c130c04301d06995ef08f1cbd895342844d1fbb3312f5d32cb27cc05b4b394dc",
+          "size": 64302424,
+          "fileName": "Git-2.56.0-arm64.exe",
+          "kind": "exe",
+          "installArgs": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/NOCANCEL",
+            "/SP-",
+            "/SUPPRESSMSGBOXES",
+            "/CURRENTUSER",
+            "/o:PathOption=Cmd"
+          ]
+        },
+        "wingetId": "Git.Git"
+      },
+      {
+        "id": "flutter",
+        "name": "Flutter SDK",
+        "enabled": true,
+        "required": true,
+        "channel": "stable",
+        "version": "3.44.6",
+        "dartVersion": "3.12.2",
+        "pinned": true,
+        "artifact": {
+          "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.44.6-stable.zip",
+          "mirrorPath": "flutter/3.44.6/flutter_windows_3.44.6-stable.zip",
+          "sha256": "2e803e240c981733ec6b543752415196ff1b16e03f93474bddd59c777ac07a56",
+          "fileName": "flutter_windows_3.44.6-stable.zip",
+          "kind": "zip",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "java",
+        "name": "Java (Temurin JDK 17)",
+        "enabled": true,
+        "required": true,
+        "majorVersion": 17,
+        "version": "17.0.20.1+1",
+        "artifact": {
+          "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip",
+          "mirrorPath": "java/17.0.20.1+1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip",
+          "sha256": "e53a79c3c3d86865bd7e787903884331068e71321714ffd44f145785affc7cb0",
+          "size": 190817615,
+          "fileName": "OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip",
+          "kind": "zip",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "android",
+        "name": "Android SDK",
+        "enabled": true,
+        "required": true,
+        "cmdlineTools": {
+          "url": "https://dl.google.com/android/repository/commandlinetools-win-16111833_latest.zip",
+          "mirrorPath": "android/23.0/commandlinetools-win-16111833_latest.zip",
+          "sha256": "e5885e2e59038c0778a85fc19f01de7ce7c567c105553f7617b936b1e0e87b2b",
+          "size": 154957218,
+          "fileName": "commandlinetools-win-16111833_latest.zip",
+          "kind": "zip",
+          "installArgs": [],
+          "hashFromMirror": true
+        },
+        "packages": [
+          "platform-tools",
+          "platforms;android-36",
+          "build-tools;36.0.0"
+        ],
+        "acceptLicenses": true
+      },
+      {
+        "id": "chrome",
+        "name": "Google Chrome",
+        "enabled": true,
+        "required": true,
+        "artifact": {
+          "url": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B00000000-0000-0000-0000-000000000000%7D%26lang%3Den%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dfalse%26ap%3Darm64-stable-statsdef_1%26installdataindex%3Dempty/chrome/install/ChromeStandaloneSetup64.exe",
+          "mirrorPath": "chrome/2026-10-02/ChromeStandaloneSetupArm64.exe",
+          "sha256": "a480cc5ed8e5d6189464a0bf94b9e9afad68987b315d014b2b2d82d7a368862e",
+          "size": 166537656,
+          "fileName": "ChromeStandaloneSetupArm64.exe",
+          "kind": "exe",
+          "installArgs": [
+            "/silent",
+            "/install"
+          ],
+          "hashFromMirror": true
+        },
+        "wingetId": "Google.Chrome"
+      },
+      {
+        "id": "vscode",
+        "name": "VS Code + Flutter extensions",
+        "enabled": true,
+        "required": true,
+        "version": "1.140.0",
+        "artifact": {
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/07f806f999227108933c2e30515b26eecc1fda74/VSCodeUserSetup-arm64-1.140.0.exe",
+          "mirrorPath": "vscode/1.140.0/VSCodeUserSetup-arm64-1.140.0.exe",
+          "sha256": "380e6f3515167c0233366e40ef8f0daffe26e34015fede21c0b7d421af30b77a",
+          "fileName": "VSCodeUserSetup-arm64-1.140.0.exe",
+          "kind": "exe",
+          "installArgs": [
+            "/VERYSILENT",
+            "/NORESTART",
+            "/MERGETASKS=!runcode,addtopath"
+          ]
+        },
+        "extensions": [
+          "Dart-Code.dart-code",
+          "Dart-Code.flutter"
+        ],
+        "wingetId": "Microsoft.VisualStudioCode"
+      },
+      {
+        "id": "devtools",
+        "name": "DevTools",
+        "enabled": true,
+        "required": true
+      },
+      {
+        "id": "warmup",
+        "name": "Offline warm-up",
+        "enabled": true,
+        "required": true,
+        "starter": {
+          "url": "https://darted.gdgkiit.in/api/starter-project/c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5.zip",
+          "sha256": "c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5",
+          "size": 528546,
+          "fileName": "flappy.zip",
+          "projectName": "flappy"
+        },
+        "gradleWarmup": true
+      },
+      {
+        "id": "verify",
+        "name": "Final verification",
+        "enabled": true,
+        "required": true
+      }
+    ]
+  }
+}

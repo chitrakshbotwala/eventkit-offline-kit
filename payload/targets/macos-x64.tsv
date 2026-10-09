@@ -1,0 +1,20 @@
+meta	event	-	Flutter Build Day
+meta	manifestId	-	94a876c899df9b10
+meta	gitMinVersion	-	2.30.0
+meta	flutterVersion	-	3.44.6
+meta	flutterPinned	-	true
+flutter-zip	files/d698aeb05019-flutter_macos_3.44.6-stable.zip	d698aeb050198878ec6d5cdc1e6ccf1ef6850ec336985b03812b2525df2289ce	
+meta	javaMajor	-	17
+java-tar.gz	files/c01975da12ed-OpenJDK17U-jdk_x64_mac_hotspot_17.0.20.1_1.tar.gz	c01975da12ed4235250ff891fe8bba73a9e73037d444b269c9d0922b5dbc8e0a	
+android-cmdline-tools	files/commandlinetools-mac_arm64-16111833_latest.zip	58da8f215781cc0208743e88b65ae259780c55e7eb40e50373d377cf369232d6	
+android-package	android/platform-tools_r37.0.1-darwin.zip	ee39ad5967e95c2a07f04dbcbde96b1a0c916ba376096db5d2f498b7727a5d1d	platform-tools
+android-package	android/platform-36_r02.zip	37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e	platforms;android-36
+android-package	android/build-tools_r36_macosx.zip	04e7f3a72044de4926fa038fa0e251a37bba1e1c3fb8beab6f8401bfd9eb4bf3	build-tools;36.0.0
+chrome-dmg	files/googlechrome.dmg	683bee04e02a52f7f2732459a140190f96ee722ee34e0c395bca8b0d3cfff251	
+vscode-zip	files/5f56ee609568-VSCode-darwin.zip	5f56ee60956865d79711dd8a1ceef7d94b72ba2c5539a1e46642db07a3d256d2	
+vscode-extension	vscode-extensions/Dart-Code.dart-code.vsix	1cb162aa1d96784bb20e17e2a6ed079172a093410c86af461bc00a1324ff3ceb	Dart-Code.dart-code
+vscode-extension	vscode-extensions/Dart-Code.flutter.vsix	c6339d35767e03c7f87906f2ffd10f038588b83d4ebdb7e74bf04a99db64fa45	Dart-Code.flutter
+starter-project	files/c347a1ece2bc-flappy.zip	c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5	flappy
+meta	starterSha256	-	c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5
+meta	appVersion	-	0.1.3
+app-dmg	app/EventKit-0.1.3-x64.dmg	4b84f2e585e79dc99cf95b6fba554a1b28660e9d1346fc62b2d5dc7ba12114fc	

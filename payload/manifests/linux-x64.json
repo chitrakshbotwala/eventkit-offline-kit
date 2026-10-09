@@ -1,0 +1,231 @@
+{
+  "alg": "Ed25519",
+  "keyId": "d6880dc0b37be84b",
+  "signature": "7OYF6z95TQoFbSLcPQsvdr4Cy4fOqsuOf97iQ4na0Ev5ScnORLyfJF3byK9HkF5VNwhhAWOmQu9Exgb6KVP5DQ==",
+  "payload": {
+    "schemaVersion": 1,
+    "manifestId": "da4b07ec0b76edce",
+    "issuedAt": "2026-10-09T17:27:08.385Z",
+    "expiresAt": "2026-10-12T17:27:08.385Z",
+    "event": {
+      "slug": "flutter-event",
+      "name": "Flutter Build Day"
+    },
+    "target": {
+      "os": "linux",
+      "arch": "x64"
+    },
+    "mirrorBaseUrl": null,
+    "minAppVersion": "0.1.0",
+    "placeholder": false,
+    "components": [
+      {
+        "id": "system",
+        "name": "System check",
+        "enabled": true,
+        "required": true,
+        "minDiskGb": 15
+      },
+      {
+        "id": "linux-deps",
+        "name": "System packages",
+        "enabled": true,
+        "required": true,
+        "packages": {
+          "apt": [
+            "curl",
+            "git",
+            "unzip",
+            "xz-utils",
+            "zip",
+            "libglu1-mesa",
+            "clang",
+            "cmake",
+            "ninja-build",
+            "pkg-config",
+            "libgtk-3-dev",
+            "liblzma-dev"
+          ],
+          "dnf": [
+            "curl",
+            "git",
+            "unzip",
+            "xz",
+            "zip",
+            "mesa-libGLU",
+            "clang",
+            "cmake",
+            "ninja-build",
+            "pkgconf-pkg-config",
+            "gtk3-devel",
+            "xz-devel"
+          ],
+          "pacman": [
+            "curl",
+            "git",
+            "unzip",
+            "xz",
+            "zip",
+            "glu",
+            "clang",
+            "cmake",
+            "ninja",
+            "pkgconf",
+            "gtk3"
+          ],
+          "zypper": [
+            "curl",
+            "git",
+            "unzip",
+            "xz",
+            "zip",
+            "libGLU1",
+            "clang",
+            "cmake",
+            "ninja",
+            "pkg-config",
+            "gtk3-devel",
+            "xz-devel"
+          ]
+        }
+      },
+      {
+        "id": "git",
+        "name": "Git",
+        "enabled": true,
+        "required": true,
+        "minVersion": "2.30.0"
+      },
+      {
+        "id": "flutter",
+        "name": "Flutter SDK",
+        "enabled": true,
+        "required": true,
+        "channel": "stable",
+        "version": "3.44.6",
+        "dartVersion": "3.12.2",
+        "pinned": true,
+        "artifact": {
+          "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.44.6-stable.tar.xz",
+          "mirrorPath": "flutter/3.44.6/flutter_linux_3.44.6-stable.tar.xz",
+          "sha256": "a6320fd72e9a2690c08e2a6a70874a30cb120dee7c78f49d2c628bd7c9e20525",
+          "fileName": "flutter_linux_3.44.6-stable.tar.xz",
+          "kind": "tar.xz",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "java",
+        "name": "Java (Temurin JDK 17)",
+        "enabled": true,
+        "required": true,
+        "majorVersion": 17,
+        "version": "17.0.20.1+1",
+        "artifact": {
+          "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz",
+          "mirrorPath": "java/17.0.20.1+1/OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz",
+          "sha256": "3808d1d15e3ec6bd5b84057fb5d84c33d8a1536a258146bcea2e603fc726e08e",
+          "size": 193252603,
+          "fileName": "OpenJDK17U-jdk_x64_linux_hotspot_17.0.20.1_1.tar.gz",
+          "kind": "tar.gz",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "android",
+        "name": "Android SDK",
+        "enabled": true,
+        "required": true,
+        "cmdlineTools": {
+          "url": "https://dl.google.com/android/repository/commandlinetools-linux-16111833_latest.zip",
+          "mirrorPath": "android/23.0/commandlinetools-linux-16111833_latest.zip",
+          "sha256": "0877a1d048fe4a24efe2eff536ca4223f7adeb58648bb81909d33c446918cfa8",
+          "size": 181052239,
+          "fileName": "commandlinetools-linux-16111833_latest.zip",
+          "kind": "zip",
+          "installArgs": [],
+          "hashFromMirror": true
+        },
+        "packages": [
+          "platform-tools",
+          "platforms;android-36",
+          "build-tools;36.0.0"
+        ],
+        "acceptLicenses": true
+      },
+      {
+        "id": "chrome",
+        "name": "Google Chrome",
+        "enabled": true,
+        "required": true,
+        "linuxPackages": {
+          "deb": {
+            "url": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+            "mirrorPath": "chrome/2026-10-02/google-chrome-stable_current_amd64.deb",
+            "sha256": "a4edbe95e9b01db6c9b97d7a1323121eda18362b5620df06abac1b59bee80053",
+            "size": 142172388,
+            "fileName": "google-chrome-stable_current_amd64.deb",
+            "kind": "deb",
+            "installArgs": [],
+            "hashFromMirror": true
+          },
+          "rpm": {
+            "url": "https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm",
+            "mirrorPath": "chrome/2026-10-02/google-chrome-stable_current_x86_64.rpm",
+            "sha256": "d6086fb6be1a193ebe4699d8ae8bbec67ea333c1d799a91faca479c4f4064ac9",
+            "size": 145370489,
+            "fileName": "google-chrome-stable_current_x86_64.rpm",
+            "kind": "rpm",
+            "installArgs": [],
+            "hashFromMirror": true
+          }
+        }
+      },
+      {
+        "id": "vscode",
+        "name": "VS Code + Flutter extensions",
+        "enabled": true,
+        "required": true,
+        "version": "1.140.0",
+        "artifact": {
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/07f806f999227108933c2e30515b26eecc1fda74/code-stable-x64-1790759436.tar.gz",
+          "mirrorPath": "vscode/1.140.0/code-stable-x64-1790759436.tar.gz",
+          "sha256": "d32031e9e213d59532af3cf32fcb8b357a1cdd10417967b4f5b5ba30436dc0dc",
+          "fileName": "code-stable-x64-1790759436.tar.gz",
+          "kind": "tar.gz",
+          "installArgs": []
+        },
+        "extensions": [
+          "Dart-Code.dart-code",
+          "Dart-Code.flutter"
+        ]
+      },
+      {
+        "id": "devtools",
+        "name": "DevTools",
+        "enabled": true,
+        "required": true
+      },
+      {
+        "id": "warmup",
+        "name": "Offline warm-up",
+        "enabled": true,
+        "required": true,
+        "starter": {
+          "url": "https://darted.gdgkiit.in/api/starter-project/c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5.zip",
+          "sha256": "c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5",
+          "size": 528546,
+          "fileName": "flappy.zip",
+          "projectName": "flappy"
+        },
+        "gradleWarmup": true
+      },
+      {
+        "id": "verify",
+        "name": "Final verification",
+        "enabled": true,
+        "required": true
+      }
+    ]
+  }
+}

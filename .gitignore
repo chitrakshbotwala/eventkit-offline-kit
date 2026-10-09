@@ -1,0 +1,5 @@
+payload/files/
+payload/android/
+payload/app/
+payload/vscode-extensions/
+*.part

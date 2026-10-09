@@ -1,0 +1,21 @@
+meta	event	-	Flutter Build Day
+meta	manifestId	-	59f472cfc71d1640
+meta	gitMinVersion	-	2.30.0
+git-exe	files/bfe94e7b419b-Git-2.56.0-64-bit.exe	bfe94e7b419b16eee9fecbd1253a98e3d4f49ba8f029630549052278ffe286a6	/VERYSILENT /NORESTART /NOCANCEL /SP- /SUPPRESSMSGBOXES /CURRENTUSER /o:PathOption=Cmd
+meta	flutterVersion	-	3.44.6
+meta	flutterPinned	-	true
+flutter-zip	files/2e803e240c98-flutter_windows_3.44.6-stable.zip	2e803e240c981733ec6b543752415196ff1b16e03f93474bddd59c777ac07a56	
+meta	javaMajor	-	17
+java-zip	files/e53a79c3c3d8-OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip	e53a79c3c3d86865bd7e787903884331068e71321714ffd44f145785affc7cb0	
+android-cmdline-tools	files/commandlinetools-win-16111833_latest.zip	e5885e2e59038c0778a85fc19f01de7ce7c567c105553f7617b936b1e0e87b2b	
+android-package	android/platform-tools_r37.0.1-win.zip	45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99	platform-tools
+android-package	android/platform-36_r02.zip	37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e	platforms;android-36
+android-package	android/build-tools_r36_windows.zip	aa1095cb14d83e483818a748a2c06faaeb8e601561b06a356a119a1b2ca280d3	build-tools;36.0.0
+chrome-exe	files/ChromeStandaloneSetup64.exe	c7ccce482fde14af4c5c6a59c5bf8ed29b9f9cab901fb3c63dee3167c92339ab	/silent /install
+vscode-exe	files/b66449d7acf5-VSCodeUserSetup-x64-1.140.0.exe	b66449d7acf503f556b5a50593717b0092f48df1f62ce38a7dba5b93da0b425e	/VERYSILENT /NORESTART /MERGETASKS=!runcode,addtopath
+vscode-extension	vscode-extensions/Dart-Code.dart-code.vsix	1cb162aa1d96784bb20e17e2a6ed079172a093410c86af461bc00a1324ff3ceb	Dart-Code.dart-code
+vscode-extension	vscode-extensions/Dart-Code.flutter.vsix	c6339d35767e03c7f87906f2ffd10f038588b83d4ebdb7e74bf04a99db64fa45	Dart-Code.flutter
+starter-project	files/c347a1ece2bc-flappy.zip	c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5	flappy
+meta	starterSha256	-	c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5
+meta	appVersion	-	0.1.3
+app-exe	app/EventKit-Setup-0.1.3-x64.exe	6ec29f2240c4db9a6d414313d6792f901bbe756a58645b57eae2659ac52c3c4b	

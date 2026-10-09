@@ -1,0 +1,156 @@
+{
+  "alg": "Ed25519",
+  "keyId": "d6880dc0b37be84b",
+  "signature": "zG5Q+a86BRAexDk1Og+wJdgkBeJCxyj9wRd+S1Wx1jaWUqmd27o2K1LnItTGPM4ZUd3DqmLBLsX+CcrPIe7uCA==",
+  "payload": {
+    "schemaVersion": 1,
+    "manifestId": "94a876c899df9b10",
+    "issuedAt": "2026-10-09T17:22:40.998Z",
+    "expiresAt": "2026-10-12T17:22:40.998Z",
+    "event": {
+      "slug": "flutter-event",
+      "name": "Flutter Build Day"
+    },
+    "target": {
+      "os": "macos",
+      "arch": "x64"
+    },
+    "mirrorBaseUrl": null,
+    "minAppVersion": "0.1.0",
+    "placeholder": false,
+    "components": [
+      {
+        "id": "system",
+        "name": "System check",
+        "enabled": true,
+        "required": true,
+        "minDiskGb": 15
+      },
+      {
+        "id": "git",
+        "name": "Git",
+        "enabled": true,
+        "required": true,
+        "minVersion": "2.30.0"
+      },
+      {
+        "id": "flutter",
+        "name": "Flutter SDK",
+        "enabled": true,
+        "required": true,
+        "channel": "stable",
+        "version": "3.44.6",
+        "dartVersion": "3.12.2",
+        "pinned": true,
+        "artifact": {
+          "url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.44.6-stable.zip",
+          "mirrorPath": "flutter/3.44.6/flutter_macos_3.44.6-stable.zip",
+          "sha256": "d698aeb050198878ec6d5cdc1e6ccf1ef6850ec336985b03812b2525df2289ce",
+          "fileName": "flutter_macos_3.44.6-stable.zip",
+          "kind": "zip",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "java",
+        "name": "Java (Temurin JDK 17)",
+        "enabled": true,
+        "required": true,
+        "majorVersion": 17,
+        "version": "17.0.20.1+1",
+        "artifact": {
+          "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_mac_hotspot_17.0.20.1_1.tar.gz",
+          "mirrorPath": "java/17.0.20.1+1/OpenJDK17U-jdk_x64_mac_hotspot_17.0.20.1_1.tar.gz",
+          "sha256": "c01975da12ed4235250ff891fe8bba73a9e73037d444b269c9d0922b5dbc8e0a",
+          "size": 180578248,
+          "fileName": "OpenJDK17U-jdk_x64_mac_hotspot_17.0.20.1_1.tar.gz",
+          "kind": "tar.gz",
+          "installArgs": []
+        }
+      },
+      {
+        "id": "android",
+        "name": "Android SDK",
+        "enabled": true,
+        "required": true,
+        "cmdlineTools": {
+          "url": "https://dl.google.com/android/repository/commandlinetools-mac_arm64-16111833_latest.zip",
+          "mirrorPath": "android/23.0/commandlinetools-mac_arm64-16111833_latest.zip",
+          "sha256": "58da8f215781cc0208743e88b65ae259780c55e7eb40e50373d377cf369232d6",
+          "size": 155384151,
+          "fileName": "commandlinetools-mac_arm64-16111833_latest.zip",
+          "kind": "zip",
+          "installArgs": [],
+          "hashFromMirror": true
+        },
+        "packages": [
+          "platform-tools",
+          "platforms;android-36",
+          "build-tools;36.0.0"
+        ],
+        "acceptLicenses": true
+      },
+      {
+        "id": "chrome",
+        "name": "Google Chrome",
+        "enabled": true,
+        "required": true,
+        "artifact": {
+          "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+          "mirrorPath": "chrome/2026-10-02/googlechrome.dmg",
+          "sha256": "7eb6591e16b0148c850411642ed2f9e1cf8c5df772db2e1e038f9ce3afc8d16e",
+          "size": 281855031,
+          "fileName": "googlechrome.dmg",
+          "kind": "dmg",
+          "installArgs": [],
+          "hashFromMirror": true
+        }
+      },
+      {
+        "id": "vscode",
+        "name": "VS Code + Flutter extensions",
+        "enabled": true,
+        "required": true,
+        "version": "1.140.0",
+        "artifact": {
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/07f806f999227108933c2e30515b26eecc1fda74/VSCode-darwin.zip",
+          "mirrorPath": "vscode/1.140.0/VSCode-darwin.zip",
+          "sha256": "5f56ee60956865d79711dd8a1ceef7d94b72ba2c5539a1e46642db07a3d256d2",
+          "fileName": "VSCode-darwin.zip",
+          "kind": "zip",
+          "installArgs": []
+        },
+        "extensions": [
+          "Dart-Code.dart-code",
+          "Dart-Code.flutter"
+        ]
+      },
+      {
+        "id": "devtools",
+        "name": "DevTools",
+        "enabled": true,
+        "required": true
+      },
+      {
+        "id": "warmup",
+        "name": "Offline warm-up",
+        "enabled": true,
+        "required": true,
+        "starter": {
+          "url": "https://darted.gdgkiit.in/api/starter-project/c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5.zip",
+          "sha256": "c347a1ece2bcad7e81f62c0da0b49e5f6c31b8bd79525dfa11840924927389a5",
+          "size": 528546,
+          "fileName": "flappy.zip",
+          "projectName": "flappy"
+        },
+        "gradleWarmup": true
+      },
+      {
+        "id": "verify",
+        "name": "Final verification",
+        "enabled": true,
+        "required": true
+      }
+    ]
+  }
+}
